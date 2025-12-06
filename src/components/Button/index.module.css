@@ -1,0 +1,17 @@
+.button {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 352px;
+  width: 100%;
+  max-height: 62px;
+  height: 100%;
+  background-color: #409925;
+  color: #ffffff;
+  padding: 20px 25px 20px 30px;
+  border-radius: 118px;
+}
