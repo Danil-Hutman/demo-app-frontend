@@ -24,10 +24,10 @@ const App = () => {
         </a>
         <div className={styles.brand}>
           <LogoIcon />
-          <p className={styles.brandText}>
-            Green companions <br />
-            for every space
-          </p>
+          <div className={styles.brandTextContainer}>
+            <p className={styles.brandText}>Green companions</p>
+            <p className={styles.brandText}>for every space</p>
+          </div>
         </div>
       </header>
       <main className={styles.cardList}>
