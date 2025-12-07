@@ -21,6 +21,10 @@ body {
   padding: 35px 0 75px;
 }
 
+.title {
+  font-size: 64px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -32,20 +36,9 @@ body {
   text-align: left;
 }
 
-.grid {
+.cardList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-}
-
-@media (max-width: 1200px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 800px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 }

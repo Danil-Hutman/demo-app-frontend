@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.image {
+.cardImage {
   height: 140px;
   object-fit: contain;
 }
@@ -42,7 +42,7 @@
   padding-bottom: 20px;
 }
 
-.modalInfo {
+.modalBody {
   display: flex;
   justify-content: space-between;
   text-align: left;
@@ -63,7 +63,6 @@
 }
 
 .price {
-  font-weight: 600;
   font-size: 28px;
 }
 
@@ -77,7 +76,7 @@
   justify-content: space-between;
   gap: 40px;
 }
-.cencel {
+.cancel {
   border: 2px solid #409925;
   font: inherit;
   cursor: pointer;

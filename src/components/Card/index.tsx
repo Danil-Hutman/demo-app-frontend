@@ -25,7 +25,7 @@ const Card: React.FC<{ product: Product }> = ({ product }) => {
           <Name name={product.name} />
           <Price price={product.price} />
         </div>
-        <img className={styles.image} src={cactusImg} alt={product.name} />
+        <img className={styles.cardImage} src={cactusImg} alt={product.name} />
         <Button label="Buy now" />
       </article>
 
@@ -33,7 +33,7 @@ const Card: React.FC<{ product: Product }> = ({ product }) => {
         <div className={styles.modalHeader}>
           <Name name={product.name} />
         </div>
-        <div className={styles.modalInfo}>
+        <div className={styles.modalBody}>
           <img
             src={cactusImg}
             alt={product.name}
@@ -49,7 +49,7 @@ const Card: React.FC<{ product: Product }> = ({ product }) => {
           </div>
         </div>
         <div className={styles.modalActions}>
-          <button className={styles.cencel} onClick={closeModal}>
+          <button className={styles.cancel} onClick={closeModal}>
             Back to the list
           </button>
           <Button label="Buy now" />

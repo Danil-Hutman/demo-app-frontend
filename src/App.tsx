@@ -18,11 +18,9 @@ const App = () => {
   return (
     <div className={styles.content}>
       <header className={styles.header}>
-        <div>
-          <a href="/">
-            <h1>Product catalog</h1>
-          </a>
-        </div>
+        <a href="/">
+          <h1 className={styles.title}>Product catalog</h1>
+        </a>
         <div className={styles.brand}>
           <LogoIcon />
           <p className={styles.brandText}>
@@ -31,12 +29,10 @@ const App = () => {
           </p>
         </div>
       </header>
-      <main>
-        <section className={styles.grid}>
-          {products.map((p) => (
-            <Card key={p.id} product={p} />
-          ))}
-        </section>
+      <main className={styles.cardList}>
+        {products.map((p) => (
+          <Card key={p.id} product={p} />
+        ))}
       </main>
     </div>
   );
