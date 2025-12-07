@@ -4,20 +4,15 @@ import styles from "./index.module.css";
 type ButtonProps = {
   label: string;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  stopPropagation?: boolean;
 };
 
-const Button: React.FC<ButtonProps> = ({
-  label,
-  onClick,
-  stopPropagation = true,
-}) => {
+const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
   const handleClick = React.useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
-      if (stopPropagation) e.stopPropagation();
+      e.stopPropagation();
       onClick?.(e);
     },
-    [onClick, stopPropagation]
+    [onClick]
   );
 
   return (
